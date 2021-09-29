@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RProjetos</title>
+
+    <!--Favicon(retirado de: https://iconarchive.com/show/beautiful-flat-one-color-icons-by-elegantthemes/gear-icon.html e sobre licensa GNU)-->
+    <link rel="shortcut icon" href="Assets/Elegantthemes-Beautiful-Flat-One-Color-Gear.ico" type="image/x-icon">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/71e80ecbad.js" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegação-->
+        <nav class="navigationbar" id="navbar">
+            <a class="logo" href="#"><i class="fas fa-tools"></i>RProjetos</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#welcome">sobre</a>
+                </li>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-section">
+        <main>
+            <!--Seção inicial-->
+            <section id="welcome" class="welcome-section">
+                <h1 class="page-title">Sobre Mim</h1>
+                <p class="paragraph-text">
+                    Bem vindo ao meu site de Portfolio, meu nome é Raul Philipe e eu sou estudante de análise e desenvolvimento de sistemas. Eu nasci em 6 de julho de 2001 em Minas Gerais, Brasil.<br>
+                    <br>
+                    Meus hobbies são: ler, jogar games, assistir filmes, séries e documentários, ouvir podcasts(focados em ciência, tecnologia e história) e também gosto de aprender coisas novas.<br>
+                    <br>
+                    Já faz mais de um ano que eu estudo sobre programação e TI no geral. Meu interesse por tecnologia existe desde quando eu era pequeno então a escolha de tentar seguir uma carreira nessa área não me gerou tantas dúvidas e preocupações, eu prossigo estudando e futuramente espero conseguir um emprego na área.
+                </p>
+            </section>
+
+            <!--Seção dos projetos-->
+            <section id="projects" class="projects-section">
+                <h2 class="page-title" id="project-title">Meus Projetos</h2>
+                <div class="projects-grid">
+
+                    <!--calculadora-->
+                    <div class="overflow-img">
+                        <a href="Calculator/calc.html">
+                            <img src="Assets/Calc.png" class="img-fluid thumbnail" alt="img1">
+                            <p class="project-link"><a href="Calculator/calc.html">Calculadora</a></p>
+                        </a>
+                    </div>
+
+
+                    <!--Página de Documentação HTML-->
+                    <div class="overflow-img">
+                        <a href="Documentation/doc.html">
+                            <img src="Assets/HTMLDOC.png" class="img-fluid thumbnail" alt="img2">
+                            <p class="project-link"><a href="Documentation/doc.html">Página de Documentação HTML</a></p>
+                        </a>
+                    </div>
+
+
+                    <!--Questionário sobre video-games-->
+                    <div class="overflow-img">
+                        <a href="GameSurvey/survey.html">
+                            <img src="Assets/game.png" class="img-fluid thumbnail" alt="img3">
+                            <p class="project-link"><a href="GameSurvey/survey.html">Questionário Sobre Video-games</a>
+                            </p>
+                        </a>
+                    </div>
+
+
+                    <!--visualizador de marcação-->
+                    <div class="overflow-img">
+                        <a href="MarkdownPreviewer/mark.html">
+                            <img src="Assets/Markup.png" class="img-fluid thumbnail" alt="img4">
+                            <p class="project-link"><a href="MarkdownPreviewer/mark.html">Visualizador de Marcação</a>
+                            </p>
+                        </a>
+                    </div>
+
+
+                    <!--Máquina de frases aleatórias-->
+                    <div class="overflow-img">
+                        <a href="RandomQuote/quote.html">
+                            <img src="Assets/Quote.png" class="img-fluid thumbnail" alt="img5">
+                            <p class="project-link"><a href="RandomQuote/quote.html">Máquina de Frases Aleatórias</a>
+                            </p>
+                        </a>
+                    </div>
+
+                    <!--página de homenagem-->
+                    <div class="overflow-img">
+                        <a href="TributePage/tribute.html">
+                            <img src="Assets/Tribute.png" class="img-fluid thumbnail" alt="img5">
+                            <p class="project-link"><a href="TributePage/tribute.html">Página de Homenagem</a></p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Seção de contatos-->
+            <section id="contact" class="contact-section">
+                <h3 class="page-title">Social</h3>
+                <p class="paragraph-text">Entre em contato:</p>
+                <div class="contact-links">
+                    <a class="profile-links" id="profile-link" href="https://github.com/RaulPhilipe" target="_blank"><i
+                            class="fab fa-github"></i>Github</a>
+                    <a class="profile-links" href="https://codepen.io/CrazyDiamond4811" target="_blank"><i
+                            class="fab fa-codepen"></i>Codepen</a>
+                </div>
+                <p class="paragraph-text">Email: raulvieira62@outlook.com</p>
+            </section>
+        </main>
+    </div>
+
+    <!--Rodapé da página-->
+    <footer class="page-footer">
+        <p>Este site foi desenvolvido para um trabalho acadêmico e não representa um Portfolio real. <br>2021 <i class="far fa-copyright"></i>Raul Philipe.
+        </p>
+    </footer>
+
+    <!--JS-->
+    <script src="main.js"></script>
+</body>
+
+</html>

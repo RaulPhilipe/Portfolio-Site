@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário sobre Videogames</title>
+
+    <!--Favicon(retirado de: https://iconarchive.com/show/beautiful-flat-one-color-icons-by-elegantthemes/gear-icon.html e sobre licensa GNU)-->
+    <link rel="shortcut icon" href="assets/Elegantthemes-Beautiful-Flat-One-Color-Gear.ico" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/survey.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/71e80ecbad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="backwrapper"><button id="backbtn"><i class="fas fa-chevron-circle-left">Voltar</i></button></div>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Questionário sobre Videogames</h1>
+            <p id="description">Por favor responda o questinário abaixo para nós ajudar a compreender melhor a sua relação com os jogos.</p>
+        </header>
+        <form id="survey-form">
+            <div class="elements">
+                <label class="contact-details" for="name" id="name-label">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+            </div>
+
+            <div class="elements">
+                <label class="contact-details" for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="elements">
+                <label class="contact-details" for="number" id="number-label">Idade</label>
+                <input type="number" id="number" name="number" min="10" max="99" placeholder="Digite sua idade" required>
+            </div>
+
+            <div class="elements">
+                <p>Qual a sua plataforma preferida?</p>
+                <label class="radio">
+                    <input type="radio" name="videogame" id="playstation" value="playstation"
+                        required>Playstation</label>
+
+                <label class="radio">
+                    <input type="radio" name="videogame" id="xbox" value="xbox" required>Xbox</label>
+
+                <label class="radio">
+                    <input type="radio" name="videogame" id="nintendo" value="nintendo" required>Nintendo</label>
+
+                <label class="radio">
+                    <input type="radio" name="videogame" id="PC" value="PC" required>PC</label>
+
+                <label class="radio">
+                    <input type="radio" name="videogame" id="mobile" value="mobile" required>Mobile</label>
+            </div>
+
+            <div class="elements">
+                <p>Quais genêros de jogos você mais gosta?</p>
+                <label class="checkbox">
+                    <input type="checkbox" id="action" name="subjects" value="action">Action</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="action-adventure" name="subjects"
+                        value="action-adventure">Action-adventure</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="adventure" name="subjects" value="adventure">Adventure</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="rpg" name="subjects" value="rpg">RPG</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="simulation" name="subjects" value="simulation">Simulation</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="sports" name="subjects" value="sports">Sports</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="strategy" name="subjects" value="strategy">Strategy</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="MMO" name="subjects" value="MMO">MMO</label>    
+
+                <label class="checkbox">
+                    <input type="checkbox" id="Sandbox" name="subjects" value="Sandbox">Sandbox/Open World</label>
+            </div>
+
+            <div class="elements">
+                <label for="dropdown" class="contact-details">Com qual frequência você compra jogos?</label>
+                <select id="dropdown" required>
+                    <option value="">Selecione uma opção</option>
+
+                    <option value="never">Nunca comprei</option>
+
+                    <option value="rarely">Raramente compro</option>
+
+                    <option value="sometimes">De vez em quando compro</option>
+
+                    <option value="often">Compro com frequência</option>
+
+                    <option value="always">Compro com muita frequência</option>
+                </select>
+            </div>
+
+            <div class="elements">
+                <label for="add-info">Informações Adicionais</label>
+                <textarea id="add-info" class="input-textarea" name="comment" placeholder="Adicione mais informações aqui caso desejar..."></textarea>
+            </div>
+
+            <div class="elements">
+                <button id="submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!--JS-->
+    <script src="js/back.js"></script>
+</body>
+
+</html>

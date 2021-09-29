@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Machine</title>
+
+    <!--Favicon(retirado de: https://iconarchive.com/show/beautiful-flat-one-color-icons-by-elegantthemes/gear-icon.html e sobre licensa GNU)-->
+    <link rel="shortcut icon" href="assets/Elegantthemes-Beautiful-Flat-One-Color-Gear.ico" type="image/x-icon">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/71e80ecbad.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/quote.css">
+</head>
+
+<body>
+    <div class="backwrapper"><button id="backbtn"><i class="fas fa-chevron-circle-left">Voltar</i></button></div>
+    <div class="text-center">
+        <div id="quote-box">
+            <h1>Random Quote Generator</h1>
+            <p>Some Quotes</p>
+            <div class="quote-text">
+                <i class="fa fa-quote-left"></i><span id="text"></span>
+            </div>
+            <div class="quote-author">
+                -<span id="author"></span>
+            </div>
+
+            <div class="buttons">
+                <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank"
+                    href='twitter.com/intent/tweet'>
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <button class="btn btn-default" type="submit" id="new-quote">New Quote</button>
+            </div>
+        </div>
+        <div class="footer">
+            created by <a href="https://github.com/RaulPhilipe" target="_blank">Raul Philipe</a>
+        </div>
+    </div>
+
+    <!--JQuery-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+    <!--JS-->
+    <script  src="js/quote.js"></script>
+    <script src="js/back.js"></script>
+</body>
+
+</html>
